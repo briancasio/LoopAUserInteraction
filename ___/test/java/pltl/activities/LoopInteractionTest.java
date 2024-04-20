@@ -1,38 +1,53 @@
 package pltl.activities;
+import org.junit.After;
+import org.junit.Before;
+import org.junit.Test;
+import java.io.ByteArrayInputStream;
+import java.io.ByteArrayOutputStream;
+import java.io.InputStream;
+import java.io.PrintStream;
+import static org.junit.Assert.assertEquals;
 
-import junit.framework.Test;
-import junit.framework.TestCase;
-import junit.framework.TestSuite;
+public class LoopInteractionTest {
 
-/**
- * Unit test for simple App.
- */
-public class LoopInteractionTest 
-    extends TestCase
-{
-    /**
-     * Create the test case
-     *
-     * @param testName name of the test case
-     */
-    public LoopInteractionTest( String testName )
-    {
-        super( testName );
+    private final InputStream originalSystemIn = System.in;
+    private final PrintStream originalSystemOut = System.out;
+    private final ByteArrayOutputStream outputStreamCaptor = new ByteArrayOutputStream();
+
+    @Before
+    public void setUp() {
+        System.setOut(new PrintStream(outputStreamCaptor));
     }
 
-    /**
-     * @return the suite of tests being tested
-     */
-    public static Test suite()
-    {
-        return new TestSuite( LoopInteractionTest.class );
+    @After
+    public void tearDown() {
+        System.setIn(originalSystemIn);
+        System.setOut(originalSystemOut);
     }
 
-    /**
-     * Rigourous Test :-)
-     */
-    public void testApp()
-    {
-        assertTrue( true );
+    @Test
+    public void testLoopInteraction() {
+        // Define input
+        String input = "5\nTuring\n";
+        ByteArrayInputStream in = new ByteArrayInputStream(input.getBytes());
+        System.setIn(in);
+
+        // Capture output
+        LoopInteraction.main(null);
+        String actualOutput = outputStreamCaptor.toString().trim();
+
+        // Define expected output
+        String expectedOutput = "n: Name: for: Turing Turing Turing Turing Turing \nwhile: Turing Turing Turing Turing Turing \ndo while: Turing Turing Turing Turing Turing";
+
+        // Print input, expected output, and actual output
+        System.out.println("Input:");
+        System.out.println(input);
+        System.out.println("Expected Output:");
+        System.out.println(expectedOutput);
+        System.out.println("Actual Output:");
+        System.out.println(actualOutput);
+
+        // Assert expected and actual output
+        assertEquals(expectedOutput, actualOutput);
     }
 }

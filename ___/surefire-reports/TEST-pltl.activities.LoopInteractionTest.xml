@@ -1,9 +1,9 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testsuite xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="https://maven.apache.org/surefire/maven-surefire-plugin/xsd/surefire-test-report-3.0.xsd" version="3.0" name="pltl.activities.LoopInteractionTest" time="0.014" tests="1" errors="0" skipped="0" failures="0">
+<testsuite xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="https://maven.apache.org/surefire/maven-surefire-plugin/xsd/surefire-test-report-3.0.xsd" version="3.0" name="pltl.activities.LoopInteractionTest" time="0.051" tests="1" errors="0" skipped="0" failures="0">
   <properties>
     <property name="java.specification.version" value="17"/>
     <property name="sun.jnu.encoding" value="UTF-8"/>
-    <property name="java.class.path" value="/Users/briancasio/Desktop/PLTL Activities/LoopAUserInteraction/___/test-classes:/Users/briancasio/Desktop/PLTL Activities/LoopAUserInteraction/___/classes:/Users/briancasio/.m2/repository/junit/junit/3.8.1/junit-3.8.1.jar:"/>
+    <property name="java.class.path" value="/Users/briancasio/Desktop/PLTL Activities/LoopAUserInteraction/___/test-classes:/Users/briancasio/Desktop/PLTL Activities/LoopAUserInteraction/___/classes:/Users/briancasio/.m2/repository/junit/junit/4.13.2/junit-4.13.2.jar:/Users/briancasio/.m2/repository/org/hamcrest/hamcrest-core/1.3/hamcrest-core-1.3.jar:"/>
     <property name="java.vm.vendor" value="Eclipse Adoptium"/>
     <property name="sun.arch.data.model" value="64"/>
     <property name="java.vendor.url" value="https://adoptium.net/"/>
@@ -12,10 +12,10 @@
     <property name="sun.java.launcher" value="SUN_STANDARD"/>
     <property name="user.country" value="US"/>
     <property name="sun.boot.library.path" value="/Library/Java/JavaVirtualMachines/temurin-17.jdk/Contents/Home/lib"/>
-    <property name="sun.java.command" value="/Users/briancasio/Desktop/PLTL Activities/LoopAUserInteraction/___/surefire/surefirebooter-20240420032103128_3.jar /Users/briancasio/Desktop/PLTL Activities/LoopAUserInteraction/___/surefire 2024-04-20T03-21-03_060-jvmRun1 surefire-20240420032103128_1tmp surefire_0-20240420032103128_2tmp"/>
+    <property name="sun.java.command" value="/Users/briancasio/Desktop/PLTL Activities/LoopAUserInteraction/___/surefire/surefirebooter-20240420045718938_3.jar /Users/briancasio/Desktop/PLTL Activities/LoopAUserInteraction/___/surefire 2024-04-20T04-57-18_875-jvmRun1 surefire-20240420045718938_1tmp surefire_0-20240420045718938_2tmp"/>
     <property name="http.nonProxyHosts" value="local|*.local|169.254/16|*.169.254/16"/>
     <property name="jdk.debug" value="release"/>
-    <property name="surefire.test.class.path" value="/Users/briancasio/Desktop/PLTL Activities/LoopAUserInteraction/___/test-classes:/Users/briancasio/Desktop/PLTL Activities/LoopAUserInteraction/___/classes:/Users/briancasio/.m2/repository/junit/junit/3.8.1/junit-3.8.1.jar:"/>
+    <property name="surefire.test.class.path" value="/Users/briancasio/Desktop/PLTL Activities/LoopAUserInteraction/___/test-classes:/Users/briancasio/Desktop/PLTL Activities/LoopAUserInteraction/___/classes:/Users/briancasio/.m2/repository/junit/junit/4.13.2/junit-4.13.2.jar:/Users/briancasio/.m2/repository/org/hamcrest/hamcrest-core/1.3/hamcrest-core-1.3.jar:"/>
     <property name="sun.cpu.endian" value="little"/>
     <property name="user.home" value="/Users/briancasio"/>
     <property name="user.language" value="en"/>
@@ -28,7 +28,7 @@
     <property name="line.separator" value="&#10;"/>
     <property name="java.specification.name" value="Java Platform API Specification"/>
     <property name="java.vm.specification.vendor" value="Oracle Corporation"/>
-    <property name="surefire.real.class.path" value="/Users/briancasio/Desktop/PLTL Activities/LoopAUserInteraction/___/surefire/surefirebooter-20240420032103128_3.jar"/>
+    <property name="surefire.real.class.path" value="/Users/briancasio/Desktop/PLTL Activities/LoopAUserInteraction/___/surefire/surefirebooter-20240420045718938_3.jar"/>
     <property name="sun.management.compiler" value="HotSpot 64-Bit Tiered Compilers"/>
     <property name="ftp.nonProxyHosts" value="local|*.local|169.254/16|*.169.254/16"/>
     <property name="java.runtime.version" value="17.0.8.1+1"/>
@@ -55,5 +55,5 @@
     <property name="socksNonProxyHosts" value="local|*.local|169.254/16|*.169.254/16"/>
     <property name="java.class.version" value="61.0"/>
   </properties>
-  <testcase name="testApp" classname="pltl.activities.LoopInteractionTest" time="0.001"/>
+  <testcase name="testLoopInteraction" classname="pltl.activities.LoopInteractionTest" time="0.017"/>
 </testsuite>
