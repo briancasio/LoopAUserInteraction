@@ -15,4 +15,9 @@
       <scope>test</scope>
     </dependency>
   </dependencies>
+      <build>
+        <sourceDirectory>activity/main/java</sourceDirectory>
+        <testSourceDirectory>activity/test/java</testSourceDirectory>
+        <directory>___</directory>
+    </build>
 </project>
