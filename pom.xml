@@ -17,7 +17,7 @@
   </dependencies>
       <build>
         <sourceDirectory>activity/main/java</sourceDirectory>
-        <testSourceDirectory>activity/test/java</testSourceDirectory>
+        <testSourceDirectory>___/test/java</testSourceDirectory>
         <directory>___</directory>
     </build>
 </project>
