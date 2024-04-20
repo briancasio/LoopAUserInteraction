@@ -36,10 +36,8 @@ public class LoopInteractionTest {
         LoopInteraction.main(null);
         String actualOutput = outputStreamCaptor.toString().trim();
 
-        // Define expected output
         String expectedOutput = "n: Name: for: Turing Turing Turing Turing Turing \nwhile: Turing Turing Turing Turing Turing \ndo while: Turing Turing Turing Turing Turing";
 
-        // Print input, expected output, and actual output
         System.out.println("Input:");
         System.out.println(input);
         System.out.println("Expected Output:");
@@ -47,7 +45,6 @@ public class LoopInteractionTest {
         System.out.println("Actual Output:");
         System.out.println(actualOutput);
 
-        // Assert expected and actual output
         assertEquals(expectedOutput, actualOutput);
     }
 }
