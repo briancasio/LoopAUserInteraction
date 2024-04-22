@@ -7,6 +7,7 @@ public class LoopInteraction {
         System.out.print("n: ");
         int n = input.nextInt();
         input.nextLine();
+        
         System.out.print("Name: ");
         String name = input.nextLine();
         input.close();
