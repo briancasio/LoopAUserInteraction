@@ -28,7 +28,9 @@ Update your control variable
 After compiling and running your program, this is the expected output:
 
 n: 5
+
 Name: Turing
+
 for: Turing, Turing, Turing, Turing, Turing     
 while: Turing, Turing, Turing, Turing, Turing   
 do while: Turing, Turing, Turing, Turing, Turing
