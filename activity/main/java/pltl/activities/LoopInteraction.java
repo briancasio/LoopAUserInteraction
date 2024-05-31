@@ -18,7 +18,7 @@ public class LoopInteraction {
             System.out.print(name + " ");
         }
         System.out.println();
-
+ 
         System.out.print("while: ");
         int j = 0;
         while(j < n){
